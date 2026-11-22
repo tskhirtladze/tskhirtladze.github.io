@@ -96,7 +96,7 @@
   if (P.education) cols.append(h("div", {}, h("h3", { text: "Education" }),
     h("ul", { class: "plain" }, P.education.map(e => h("li", {}, e.title, e.org ? h("span", { text: e.org }) : null)))));
   bio.append(cols);
-  document.getElementById("about").append(h("div", { class: "about-grid" }, side, bio));
+  document.getElementById("about").replaceChildren(h("div", { class: "about-grid" }, side, bio));
 
   /* ---------- sections + navigation ---------- */
   const links = document.getElementById("links"), main = document.getElementById("sections");
