@@ -89,7 +89,7 @@
   side.append(h("ul", { class: "social" }, P.social.map(l =>
     h("li", {}, h("a", { href: l.url, title: l.label, "aria-label": l.label, html: ICONS[l.icon] || ICONS.link, ...ext(l.url) })))));
 
-  const bio = h("div", { class: "bio" }, h("h2", { text: "Biography" }), P.bio.map(t => h("p", { text: t })));
+  const bio = h("div", { class: "bio" }, h("h2", { text: "Bio" }), P.bio.map(t => h("p", { text: t })));
   if (P.now) bio.append(h("p", { class: "now" }, P.now.text + " ", link(P.now.label, P.now.url)));
   const cols = h("div", { class: "cols" });
   if (P.interests) cols.append(h("div", {}, h("h3", { text: "Interests" }), h("ul", {}, P.interests.map(i => h("li", { text: i })))));
