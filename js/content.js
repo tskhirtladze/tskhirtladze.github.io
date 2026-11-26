@@ -76,6 +76,11 @@ window.SITE = {
           text: "A chat assistant that answers questions over Linked Open Data, using RAG and a knowledge graph. In progress.", tech: "Flask, Claude, SPARQL"
         },
         {
+          title: "Milgram Obedience Experiment: An Agent-Based Model", url: "https://milgram-experiment-abm-ts.streamlit.app/", category: ["Agent-based modeling", "Simulation", "Web app"], color: "#E2A3BC", art: "agent",
+          text: "An open and interactive agent-based model exploring Milgram's obedience experiments, computational modelling, model assumptions, calibration, and reproducibility.",
+          tech: "Mesa, Streamlit"
+        },
+        {
           title: "Co-authorship Network", url: "https://github.com/tskhirtladze/agruni-network", category: ["Web scraping", "Data pipeline"], color: "#8EBBC4", art: "network",
           text: "A pipeline and network analysis for collecting, processing and visualizing academic collaboration data.",
           tech: "Selenium, NetworkX, PyVis"

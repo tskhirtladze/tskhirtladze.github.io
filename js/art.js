@@ -74,6 +74,19 @@
       <rect x="247" y="168" width="12" height="39" fill="${K}"/>
       <rect x="264" y="192" width="12" height="15" fill="${K}"/>`,
 
+    agent: () => {
+      const person = (x, y, k, fill) => `
+        <circle cx="${x}" cy="${y}" r="${14 * k}" fill="${fill}" ${sw}/>
+        <path d="M${x - 24 * k} ${y + 60 * k}V${y + 38 * k}Q${x - 24 * k} ${y + 24 * k} ${x} ${y + 24 * k}Q${x + 24 * k} ${y + 24 * k} ${x + 24 * k} ${y + 38 * k}V${y + 60 * k}Z" fill="${fill}" ${sw}/>`;
+      const arrow = (x1, x2, y) => `<path d="M${x1} ${y}H${x2}M${x2 - 10} ${y - 9}L${x2} ${y}L${x2 - 10} ${y + 9}" fill="none" ${sw}/>`;
+      const dots = [1, 1, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1].map((v, i) =>
+        `<circle cx="${55 + i * 27.3}" cy="252" r="7" fill="${v ? K : W}" ${sw}/>`).join("");
+      return person(70, 128, 1.2, K) + person(200, 140, 1, W) + person(330, 140, 1, W) +
+        arrow(110, 166, 168) + arrow(236, 294, 168) +
+        `<path d="M165 95A35 35 0 0 1 235 95" fill="none" ${sw}/>
+         <path d="M200 95L222 66" fill="none" ${sw}/><circle cx="200" cy="95" r="5" fill="${K}"/>` + dots;
+    },
+
     chat: () => `
       <rect x="40" y="45" width="215" height="70" rx="14" fill="${W}" ${sw}/>
       <rect x="62" y="68" width="150" height="9" fill="${K}" opacity=".4"/><rect x="62" y="88" width="105" height="9" fill="${K}" opacity=".4"/>
