@@ -6,7 +6,7 @@ window.SITE = {
   /* The "Home" block at the top of the page */
   profile: {
     name: ["Tornike", "Skhirtladze"],
-    role: "Data Analyst & Python Developer",
+    role: "Research Software Developer | Data Analyst | Python Developer",
     /* Portrait: put the file in images/ and set e.g. photo: "images/me.jpg".
        Leave "" to show your initials instead. */
     photo: "images/me.jpeg",
