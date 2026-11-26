@@ -81,12 +81,12 @@ window.SITE = {
           tech: "Mesa, Streamlit"
         },
         {
-          title: "Co-authorship Network", url: "https://github.com/tskhirtladze/agruni-network", category: ["Web scraping", "Data pipeline"], color: "#8EBBC4", art: "network",
+          title: "Co-authorship Network", url: "https://github.com/tskhirtladze/agruni-network", category: ["Web scraping", "Data pipeline", "Network science"], color: "#8EBBC4", art: "network",
           text: "A pipeline and network analysis for collecting, processing and visualizing academic collaboration data.",
           tech: "Selenium, NetworkX, PyVis"
         },
         {
-          title: "Agent-Based Voter Behavior Simulation", url: "https://github.com/tskhirtladze/ABM-Voter-Behavior-and-Opinion-Spread", category: ["Agent-based modeling", "Simulation"], color: "#E5A18F", art: "sim",
+          title: "Agent-Based Voter Behavior Simulation", url: "https://github.com/tskhirtladze/ABM-Voter-Behavior-and-Opinion-Spread", category: ["Agent-based modeling", "Simulation", "Network science"], color: "#E5A18F", art: "sim",
           text: "Simulates voter interactions and visualizes shifts in voting preferences over time.",
           tech: "Mesa, NetworkX"
         },
